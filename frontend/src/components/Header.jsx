@@ -11,7 +11,7 @@ const Header = () => {
                 Book Appointment <br /> With Trusted Doctors
             </p>
             <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
-                <img className='w-28' src={assets.group_profiles} alt="group profiles" />
+                <img className='w-28' src={assets.group_profiles} alt="Doctor picture poster" />
                 <p>Simply browse through our extensive list of trusted doctors,
                 <br className='hidden sm:block'/> schedule your appointment hassle-free</p>
             </div>
@@ -23,7 +23,7 @@ const Header = () => {
         {/* ----------------- Right Side ------------------ */}
 
         <div className='md:w-1/2 relative'>
-            <img className='w-full md:absolute bottom-0 h-auto rounded-lg' src={assets.header_img} alt="header image" />
+            <img className='w-full md:absolute bottom-0 h-auto rounded-lg' src={assets.header_img} alt="Doctor poster" />
         </div>
         
     </div>
