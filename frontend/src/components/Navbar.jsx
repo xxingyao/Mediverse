@@ -34,7 +34,17 @@ const Navbar = () => {
         <div className='flex items-center gap-4'>
             {
                 token 
-                ?<div></div>
+                ?<div className='flex items-center gap-2 cursor-pointer group relative'>
+                    <img className='w-13 rounded-full' src = {assets.profile_pic} alt=""/>
+                    <img className='w-3.2'src = {assets.dropdown_icon} alt=""/>
+                    <div className='absolute top-0 right-0 pt-19 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
+                        <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
+                            <p onClick={()=>navigate('my-profile')} className='hover:text-black cursor-pointer'>My Profile</p>
+                            <p onClick={()=>navigate('my-appointments')} className='hover:text-black cursor-pointer'>My Appointments</p>
+                            <p className='hover:text-black cursor-pointer'>Logout</p>
+                        </div>
+                    </div>
+                </div>
                 :<button onClick={()=>navigate('/login')} className='bg-[var(--color-primary)] text-white px-8 py-3 rounded-full font-light hidden md:block cursor-pointer'>Create account</button>
             }
         </div>
