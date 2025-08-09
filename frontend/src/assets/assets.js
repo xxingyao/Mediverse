@@ -172,12 +172,12 @@ export const doctors = [
     },
     {
         _id: 'doc7',
-        name: 'Dr. Kenji Sakamoto',
+        name: 'Dr. Akiko Yamashita',
         image: doc7,
         speciality: 'General Physician',
         degree: 'MD',
         experience: '10 Years',
-        about: 'Dr. Sakamoto values harmony and trust in the doctor-patient relationship. His practice focuses on preventive care and holistic wellness.',
+        about: 'Dr. Sakamoto values harmony and trust in the doctor-patient relationship. Her practice focuses on preventive care and holistic wellness.',
         fees: 6200,
         address: {
             line1: 'Ginza 5-chome, Chuo-ku',
